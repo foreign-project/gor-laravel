@@ -118,19 +118,7 @@
                               "<label for=\"exampleInputEmail1\">Diskon</label>"+
                               "<input type=\"number\" class=\"form-control\" name=\"diskon[]\" onkeyup=\"getSubTotal()\" value=\"0\" required>"+
                           "</div>"+
-                      "</div>"+
-                      "<div class=\"col-md-2\">"+
-                          "<div class=\"form-group\">"+
-                              "<label for=\"exampleInputEmail1\">Nama Penyewa</label>"+
-                              "<input type=\"text\" class=\"form-control\" name=\"nama[]\" placeholder=\"Contoh : Jefri Manurung\" oninput=\"getSubTotal()\" required>"+
-                          "</div>"+
-                      "</div>"+
-                      "<div class=\"col-md-2\">"+
-                          "<div class=\"form-group\">"+
-                              "<label for=\"exampleInputEmail1\">Kontak Penyewa</label>"+
-                              "<input type=\"text\" class=\"form-control\" name=\"kontak[]\" placeholder=\"Contoh : 085274715359\" oninput=\"getSubTotal()\" required>"+
-                          "</div>"+
-                      "</div>"+
+                      "</div>"
                   "</div>"+
                   "<button type=\"button\" class=\"btn btn-danger btn-fill pull-right\" onclick =\"hapusKartu(\'" + n_id + "\');getSubTotal();\">Batal</button>"+
 

@@ -40,18 +40,6 @@ class TransaksiController extends Controller
         // $operator = Operator::where('nama', $namaoperator)->first();
         // dd($request);
         for($i = 0 ; $i < count($request->kode_lapangan) ; $i++){
-          $userfdb = User::where([['nama', '=', $request->nama[$i]],
-          ['telepon', '=', $request->kontak[$i]]])->first();
-
-          if(!$userfdb){
-            User::create(
-             ['kode_user' => 1, 'nama' => $request->nama[$i],
-             'telepon' => $request->kontak[$i]]
-            );
-
-             $userfdb = User::where([['nama', '=', $request->nama[$i]],
-             ['telepon', '=', $request->kontak[$i]]])->first();
-          }
 
           Transaksi::insertGetId(
             ['kode_transaksi' => null, 'kode_user' => Auth::user()->kode_user,
