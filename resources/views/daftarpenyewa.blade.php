@@ -27,7 +27,6 @@
                         <th>Nama</th>
                         <th>Kontak</th>
                         <th>Kode Transaksi</th>
-                        <th>Operator</th>
                         <th>Kode Lapangan</th>
                         <th>Kode Jadwal</th>
                         <th>Diskon</th>
@@ -53,7 +52,7 @@
                                         <button type="submit" class="btn btn-danger">Hapus</button>
                                         <!-- <a href="daftarpenyewa/{{$trs->kode_transaksi}}/edit" class="btn btn-primary">Edit</a> -->
                                     </form>
-                                    <button data-urutan="{{$loop->iteration}}" data-id="{{$trs->kode_transaksi}}" data-operator_nama="{{$trs->operator->nama}}" data-lapangan="{{$trs->kode_lapangan}}" data-user="{{$trs->kode_user}}" data-user_nama="{{$trs->user->nama}}" data-user_kontak="{{$trs->user->telepon}}" data-jadwal="{{$trs->kode_jadwal}}" data-diskon="{{$trs->diskon}}" data-tanggal="{{$trs->tanggal}}" class="btn btn-primary edit-modal">Ubah</button>
+                                    <button data-urutan="{{$loop->iteration}}" data-id="{{$trs->kode_transaksi}}"  data-lapangan="{{$trs->kode_lapangan}}" data-user="{{$trs->kode_user}}" data-user_kontak="{{$trs->user->telepon}}" data-jadwal="{{$trs->kode_jadwal}}" data-diskon="{{$trs->diskon}}" data-tanggal="{{$trs->tanggal}}" class="btn btn-primary edit-modal">Ubah</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -175,7 +174,7 @@
                     },
                     success: function(data) {
                             // alert(id + ", " + urutan + ", " + userid + ", " + operatornama + ", " + usernama + ", " + userkontak + ", " + lapangan + ", " + jadwal + ", " + diskon + ", " + tanggal);
-                            $('.item' + id).replaceWith("<tr class='item" + id + "'><th scope='row'>" + urutan + "</th><td class='capitalize'>" + usernama + "</td><td>" + userkontak + "</td><td>" + id + "</td><td class='capitalize'>" + operatornama + "</td><td>" + lapangan + "</td><td>" + jadwal + "</td><td>" + diskon + "</td><td>" + tanggal + "</td><td class='horizontal'><form action='daftarpenyewa/" + id + "' method='post'><button type='submit' class='btn btn-danger'>Hapus</button></form><button data-urutan='" + urutan + "' data-id='" + id + "' data-operator_nama='" + operatornama + "' data-lapangan='" + lapangan + "' data-user='" + userid + "' data-user_nama='" + usernama + "' data-user_kontak='" + userkontak + "' data-jadwal='" + jadwal + "' data-diskon='" + diskon + "' data-tanggal='" + tanggal + "' class='btn btn-primary edit-modal'>Ubah</button></td></tr>");
+                            $('.item' + id).replaceWith("<tr class='item" + id + "'><th scope='row'>" + urutan + "</th><td class='capitalize'>" + usernama + "</td><td>" + userkontak + "</td><td>" + id + "</td><td class='capitalize'>" + operatornama + "</td><td>" + lapangan + "</td><td>" + jadwal + "</td><td>" + diskon + "</td><td>" + tanggal + "</td><td class='horizontal'><form action='daftarpenyewa/" + id + "' method='post'><button type='submit' class='btn btn-danger'>Hapus</button></form><button data-urutan='" + urutan + "' data-id='" + id + "' data-lapangan='" + lapangan + "' data-user='" + userid + "' data-user_nama='" + usernama + "' data-user_kontak='" + userkontak + "' data-jadwal='" + jadwal + "' data-diskon='" + diskon + "' data-tanggal='" + tanggal + "' class='btn btn-primary edit-modal'>Ubah</button></td></tr>");
                     }
                 });
             });
