@@ -1,13 +1,13 @@
-@include('partials.headerdaftarpenyewa')
+@include('partials.admin.headerdaftarpenyewa')
 
-@extends('layouts.operator')
+@extends('layouts.admin')
 
 @section('content')
     <div class="col-md-12">
         <div class="card">
             <div class="header">
                 <h4 class="title">Daftar Penyewa</h4>
-                  <form action="/daftarpenyewa" method="get">
+                  <form action="/admin/daftarpenyewa" method="get">
                         {{csrf_field()}}
                         <div class="row">
                           <div class="col-md-9">
@@ -46,7 +46,7 @@
                                 <td>{{$trs->diskon}}</td>
                                 <td>{{$trs->tanggal}}</td>
                                 <td class="horizontal">
-                                    <form action="daftarpenyewa/{{$trs->kode_transaksi}}" method="post">
+                                    <form action="/admin/daftarpenyewa/{{$trs->kode_transaksi}}" method="post">
                                         @method('delete')
                                         {{ csrf_field() }}
                                         <button type="submit" class="btn btn-danger">Hapus</button>

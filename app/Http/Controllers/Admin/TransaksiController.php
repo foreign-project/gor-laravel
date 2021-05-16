@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Transaksi;
 use App\User;
 use App\Operator;
+use App\Transaksi;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class TransaksiController extends Controller
@@ -26,7 +27,7 @@ class TransaksiController extends Controller
 
         $transaksi = Transaksi::with('user')->where('tanggal', $tanggal)->get();
 
-        return view('daftarpenyewa',compact('transaksi'), ['tanggal'=> $tanggal ] );
+        return view('pages.admin.daftarpenyewa',compact('transaksi'), ['tanggal'=> $tanggal ] );
     }
 
     /**
@@ -117,6 +118,6 @@ class TransaksiController extends Controller
     public function destroy(Transaksi $transaksi)
     {
         Transaksi::destroy($transaksi->kode_transaksi);
-        return redirect('/daftarpenyewa');
+        return redirect('/admin/daftarpenyewa');
     }
 }

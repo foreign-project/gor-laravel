@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Transaksi;
 use App\RekapPenghasilan;
@@ -26,13 +26,13 @@ class RekapControll extends Controller
         ['tanggal','<=', $request->ke]])->orderBy('tanggal', 'ASC')->get();
         $tanggal['d'] =  $request->dari;
         $tanggal['k'] = $request->ke;
-        return view('prototype_rekap', ['rekap' => $dataRekap, 'tanggal' => $tanggal, 'operator_nama'=>$request->session()->get('nama')]);
+        return view('pages.admin.prototype_rekap', ['rekap' => $dataRekap, 'tanggal' => $tanggal, 'operator_nama'=>$request->session()->get('nama')]);
       }else{
         $dataRekap = Transaksi::with('jadwal','user')->where('tanggal', date("Y-m-d"))->orderBy('tanggal', 'ASC')->get();
         // $dataRekap = RekapPenghasilan::where('tanggal', date("Y-m-d"))->get();
         $tanggal = ['d' => date("Y-m-d") , 'k' => date("Y-m-d")];
         
-        return view('prototype_rekap', ['rekap' => $dataRekap, 'tanggal' => $tanggal, 'operator_nama'=>$request->session()->get('nama')]);
+        return view('pages.admin.prototype_rekap', ['rekap' => $dataRekap, 'tanggal' => $tanggal, 'operator_nama'=>$request->session()->get('nama')]);
         
       }
 
@@ -43,7 +43,7 @@ class RekapControll extends Controller
       ['tanggal','<=', $request->ke]])->orderBy('tanggal', 'ASC')->get();
       $tanggal['d'] =  $request->dari;
       $tanggal['k'] = $request->ke;
-      return view('prototype_rekap', ['rekap' => $dataRekap, 'tanggal' => $tanggal, 'operator_nama'=>$request->session()->get('nama')]);
+      return view('pages.admin.prototype_rekap', ['rekap' => $dataRekap, 'tanggal' => $tanggal, 'operator_nama'=>$request->session()->get('nama')]);
     }
 
     public function ubahBulan($bulan){

@@ -44,22 +44,33 @@ Route::get('schedule/getdata', 'ScheduleCon@getDataTransaksi' );
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/tambahsewa', 'TambahSewaControll@index');
-    Route::post('/tambahsewa/input', 'TransaksiController@store');
+    Route::post('/tambahsewa/input', 'TambahSewaControll@store');
     Route::get('/tambahsewa/datalapangan', 'TambahSewaControll@dataLapangan');
 
-    Route::get('/rekap', 'RekapControll@index');
-    //Route::post('/rekap/filter', 'RekapControll@filter');
-    Route::get('/rekap/filter', 'RekapControll@filter');
-    Route::get('/rekap/excel/{dari}/{ke}', 'RekapControll@eksporExcel')->name('excel.ekspor');
-    Route::get('/rekap/getDataRekap/{dari}/{ke}', 'RekapControll@getDataRekapBulanan');
+    
 
-    Route::get('/daftarpenyewa', 'TransaksiController@index');
-    Route::delete('/daftarpenyewa/{transaksi}','TransaksiController@destroy');
-    // Route::get('/daftarpenyewa/{transaksi}/edit','TransaksiController@edit');
-    Route::put('/daftarpenyewa/{transaksi}','TransaksiController@update');
+    
 });
 
-// x
+Route::prefix('admin')
+    ->namespace('Admin')
+    ->middleware(['auth','admin'])
+    ->group(function() {
+        Route::get('/', 'DashboardController@index')->name('admin-dashboard');
+
+        Route::get('/daftarpenyewa', 'TransaksiController@index');
+        Route::delete('/daftarpenyewa/{transaksi}','TransaksiController@destroy');
+        Route::get('/daftarpenyewa/{transaksi}/edit','TransaksiController@edit');
+        Route::put('/daftarpenyewa/{transaksi}','TransaksiController@update');
+
+        Route::get('/rekap', 'RekapControll@index');
+        //Route::post('/rekap/filter', 'RekapControll@filter');
+        Route::get('/rekap/filter', 'RekapControll@filter');
+        Route::get('/rekap/excel/{dari}/{ke}', 'RekapControll@eksporExcel')->name('excel.ekspor');
+        Route::get('/rekap/getDataRekap/{dari}/{ke}', 'RekapControll@getDataRekapBulanan');
+
+        Route::resource('user', 'UserController');
+    });
 
 
 

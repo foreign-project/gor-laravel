@@ -1,13 +1,13 @@
-    @include('partials.headerrekap')
+    @include('partials.admin.headerrekap')
 
-    @extends('layouts.operator')
+    @extends('layouts.admin')
 
     @section('content')
 
     <div class="card" style="padding:20px 20px 20px 20px;">
         <h3>Rekap Transaksi</h3>
 
-        <form method="get" action="/rekap">
+        <form method="get" action="/admin/rekap">
         {{csrf_field()}}
         <div class="row">
           <div class="col-sm-5">
@@ -71,7 +71,7 @@
 
     </div>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="{{ url('https://www.gstatic.com/charts/loader.js') }}"></script>
     <script type="text/javascript">
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);

@@ -23,6 +23,6 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        return view('dashboardoperator'); // , ['operator_nama'=>$request->session()->get('nama')]
+        return view('pages.dashboardoperator'); // , ['operator_nama'=>$request->session()->get('nama')]
     }
 }

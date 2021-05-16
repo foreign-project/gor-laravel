@@ -5,17 +5,13 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Tambah Sewa</title>
+	<title>Dashboard Admin</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Vue JS -->
-    <script type="text/javascript" src="js/vue/vue.js"></script>
 
-    <!-- bootstrap css -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- Bootstrap core CSS     -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Animation library for notifications   -->
     <link href="css/animate.min.css" rel="stylesheet"/>
@@ -28,12 +24,10 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/tambahsewa-style.css">
-    <!-- <link rel="stylesheet" href="css/schedule-style.css"> -->
-    <!-- <link rel="stylesheet" href="css/dashboard-style.css"> -->
+    <link rel="stylesheet" href="css/dashboard-style.css">
 
 </head>
-<body onload="buatId()">
+<body>
 
 <div class="wrapper">
     <div class="sidebar" data-color="green" data-image="img/sidebar.png">
@@ -53,25 +47,37 @@
             </div>
 
             <ul class="nav">
-                <li>
-                    <a href="/home">
+                <li class="active">
+                    <a href="/admin">
                         <i class="fa fa-columns"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/daftarpenyewa">
+                    <a href="/admin/daftarpenyewa">
                         <i class="fa fa-calendar-check-o"></i>
                         <p>Daftar Penyewaan</p>
                     </a>
                 </li>
-                <li class="active">
+                {{-- <li>
                     <a href="/tambahsewa">
                         <i class="fa fa-calendar-plus-o"></i>
                         <p>Tambah Sewa</p>
                     </a>
+                </li> --}}
+                <li>
+                    <a href="/admin/rekap">
+                        <i class="fa fa-file-excel-o"></i>
+                        <p>Rekap</p>
+                    </a>
                 </li>
-                
+                <li>
+                    <a href="/admin/users">
+                        <i class="fa fa-user-circle"></i>
+                        <p>Users</p>
+                    </a>
+                </li>
+
             </ul>
     	</div>
     </div>

@@ -18,7 +18,7 @@
         <div class="col-6">
             <h1 class="mt-3">Update Data Transaksi</h1>
             
-            <form method="POST" action="/daftarpenyewa/{{$transaksi->kode_transaksi}}">
+            <form method="POST" action="/admin/daftarpenyewa/{{$transaksi->kode_transaksi}}">
             @csrf
             @method('patch')
                 <div class="form-group">

@@ -16,6 +16,7 @@ class UpdateLapangan extends Migration
         Schema::dropIfExists('transaksi');
         Schema::dropIfExists('lapangan');
         Schema::dropIfExists('jadwal');
+        Schema::dropIfExists('users');
         // Schema::dropIfExists('operator');
         // Schema::dropIfExists('user');
 
@@ -56,6 +57,16 @@ class UpdateLapangan extends Migration
             $table->string('kode_jadwal',5);
             $table->integer('diskon')->length(20)->unsigned();
             $table->date('tanggal',30);
+        });
+        
+        Schema::create('users', function (Blueprint $table) {
+            $table->increments('kode_user');
+            $table->string('nama');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->string('telepon');
+            $table->string('roles')->default('USER');
         });
 
         Schema::table('lapangan', function (Blueprint $table) {

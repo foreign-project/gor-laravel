@@ -1,6 +1,6 @@
 @include('partials.headertambahsewa')
 
-@extends('layouts.operator')
+@extends('layouts.dashboard')
 
 @section('content')
 <div class="col-md-12">

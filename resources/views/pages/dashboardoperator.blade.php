@@ -1,10 +1,10 @@
 @include('partials.headerdashboardoperator')
 
-@extends('layouts.operator')
+@extends('layouts.dashboard')
 
 @section('content')
     <div class="rows">
-        <div class="column">
+        <div class="column" style="margin-right: -100px">
             <a href="/" class="card credentialing">
                 <div class="overlay"></div>
                 <div class="circle">
@@ -22,7 +22,7 @@
                 <p>Daftar Penjadwalan</p>
             </a>
         </div>
-        <div class="column">
+        <div class="column" style="margin-left: -100px">
             <a href="/tambahsewa" class="card credentialing">
                 <div class="overlay"></div>
                 <div class="circle">
@@ -31,14 +31,6 @@
                 <p>Tambah Sewa</p>
             </a>
         </div>
-        <div class="column">
-            <a href="/rekap" class="card credentialing">
-                <div class="overlay"></div>
-                <div class="circle">
-                    <img src="img/recap.svg">
-                </div>
-                <p>Rekap</p>
-            </a>
-        </div>
+        
     </div>
 @endsection
