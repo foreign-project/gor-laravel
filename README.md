@@ -17,7 +17,7 @@
 <row class="sumberdaya">
         <td class="s1">
             <p align="center"> Laravel</p>
-            <p align="center"><img src="https://laravel.com/img/logomark.min.svg" width="300"></p>
+            <p align="center"><img src="https://laravel.com/img/logomark.min.svg" width="80"></p>
         </td>    
         <td class="s1"><p align="center">Vue.js</p>
     <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" width="80"></p>
