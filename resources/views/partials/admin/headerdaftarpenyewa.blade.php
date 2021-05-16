@@ -79,6 +79,12 @@
                         <p>Rekap</p>
                     </a>
                 </li>
+                <li>
+                    <a href="/admin/user">
+                        <i class="fa fa-user-circle"></i>
+                        <p>Users</p>
+                    </a>
+                </li>
 
             </ul>
     	</div>

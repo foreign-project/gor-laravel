@@ -54,7 +54,7 @@
 </div>
 
 <!--   Core JS Files   -->
-<script src="{{ url('js/jquery.3.2.1.min.js') }}" type="text/javascript"></script>
+<script src="{{ url('js/jquery.js') }}" type="text/javascript"></script>
 <script src="{{ url('js/bootstrap.min.js') }}" type="text/javascript"></script>
 
 <!--  Charts Plugin -->
@@ -76,9 +76,12 @@
 <script src="{{ url('https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js') }}" type="text/javascript"></script>
 <link href="{{ url('https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css') }}" rel="stylesheet" type="text/css" />
 
+{{-- datatables --}}
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.js"></script>
 
 <script src="{{ url('js/schedule-script.js') }}"></script>
 <script src="{{ url('js/schedule-back-script.js') }}"></script>
 <script src="{{ url('js/tambahsewa-back-script.js') }}"></script>
+@stack('addon-script')
 </body>
 </html>

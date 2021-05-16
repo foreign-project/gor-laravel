@@ -2,35 +2,46 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<link rel="icon" type="image/png" href="{{ url('assets/img/favicon.ico') }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Dashboard Admin</title>
+	<title>Daftar Users</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-    <!-- Bootstrap core CSS     -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSFR token for ajax call -->
+    <meta name="_token" content="{{ csrf_token() }}"/>
 
+    <!-- Vue JS -->
+    <script type="text/javascript" src="{{ url('js/vue/vue.js') }}"></script>
+
+    <!-- bootstrap css -->
+    <link href="{{ url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css">
+
+    <!-- Bootstrap core CSS     -->
+    <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet" />
+    
     <!-- Animation library for notifications   -->
-    <link href="css/animate.min.css" rel="stylesheet"/>
+    <link href="{{ url('css/animate.min.css') }}" rel="stylesheet"/>
 
     <!--  Light Bootstrap Table core CSS    -->
-    <link href="css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+    <link href="{{ url('css/light-bootstrap-dashboard.css?v=1.4.0') }}" rel="stylesheet"/>
 
     <!--     Fonts and icons     -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') }}">
+    <link href='{{ url('http://fonts.googleapis.com/css?family=Roboto:400,700,300') }}' rel='stylesheet' type='text/css'>
+    <link href="{{ url('css/pe-icon-7-stroke.css') }}" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/dashboard-style.css">
+    <link rel="stylesheet" href="{{ url('css/tambahsewa-style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.css"/>
 
 </head>
-<body>
+<body onload="buatId()>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="green" data-image="img/sidebar.png">
+    <div class="sidebar" data-color="green" data-image="{{ url('img/sidebar.png') }}">
 
     <!--
 
@@ -47,13 +58,13 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
+                <li>
                     <a href="/admin">
                         <i class="fa fa-columns"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
+                <li >
                     <a href="/admin/daftarpenyewa">
                         <i class="fa fa-calendar-check-o"></i>
                         <p>Daftar Penyewaan</p>
@@ -71,7 +82,7 @@
                         <p>Rekap</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="/admin/user">
                         <i class="fa fa-user-circle"></i>
                         <p>Users</p>
