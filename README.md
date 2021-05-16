@@ -1,4 +1,4 @@
-<h1 align="center" >Aplikasi Web Penjadwalan Lapangan Futsal Srikandi</h1>
+<h1 align="center" >Aplikasi Web Penjadwalan Gor Tangerang</h1>
 <p align="center">Sebuah karya dari tugas kuliah Sistem Basis Data 2</p>
 <hr>
 <h2>Fitur Utama</h2>
