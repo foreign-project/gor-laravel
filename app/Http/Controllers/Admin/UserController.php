@@ -32,10 +32,10 @@ class UserController extends Controller
                                     Aksi
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="' . route('user.edit', $item->id) .  '">
+                                    <a class="dropdown-item" href="' . route('user.edit', $item->kode_user) .  '">
                                     Sunting
                                     </a>
-                                    <form action="' . route('user.destroy', $item->id) .'" method="POST">
+                                    <form action="' . route('user.destroy', $item->kode_user) .'" method="POST">
                                         ' . method_field('delete') . csrf_field() . '
                                         <button type="submit" class="dropdown-item text-danger">
                                             Hapus
