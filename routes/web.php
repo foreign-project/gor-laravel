@@ -43,12 +43,12 @@ Route::get('schedule/getdata', 'ScheduleCon@getDataTransaksi' );
 
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('/tambahsewa', 'TambahSewaControll@index');
+    Route::get('/tambahsewa', 'TambahSewaControll@index')->name('booking');
     Route::post('/tambahsewa/input', 'TambahSewaControll@store');
     Route::get('/tambahsewa/datalapangan', 'TambahSewaControll@dataLapangan');
 
-    
-
+    Route::get('/daftarpenyewa', 'TransaksiUserController@index');
+    // Route::put('/daftarpenyewa/{transaksi}','TransaksiUserController@update');
     
 });
 

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Profil | Futsal Srikandi</title>
+    <title>Profil | Gor Tangerang</title>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/googlemap.js"></script>
     <!-- Vue JS -->
@@ -45,13 +45,14 @@
 <body>
 
     <header>
-        <h2><a href=" #">Futsal Srikandi</a></h2>
+        <h2><a href=" #">Gor Tangerang</a></h2>
         <nav>
             <li><a href="/">Home</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#maps">Lokasi</a></li>
             <li><a href="#newsletter">Jadwal</a></li>
             <li><a href="#contact">Kontak</a></li>
+            <li><a href="{{ route('booking') }}">Booking</a></li>
         </nav>
     </header>
 
@@ -59,7 +60,7 @@
     <section class="banner-area">
         <div class="img-area"></div>
         <div class="banner-text">
-            <h1>Futsal Srikandi</h1>
+            <h1>Gor Kota Tangerang</h1>
             <!-- <h3>Make it Easy...</h3> -->
             <!-- <a href="/home" class="btn">Get Started</a> -->
         </div>
@@ -184,11 +185,11 @@
         <div class="content-area">
             <div class="single-contact">
                 <i class="fa fa-map-marker"></i>
-                <p>Jl. Pelita I, Labuhan Ratu <br> Bandar Lampung, Lampung</p>
+                <p>Jl. A. Damyati No.56, RT.003/RW.006 <br> Sukasari, Kec. Tangerang</p>
                 <i class="fa fa-envelope"></i>
-                <p>futsal@srikandi.com</p>
+                <p>info@gortangerang.com</p>
                 <i class="fa fa-phone"></i>
-                <p>+628 1411 15543</p>
+                <p>(021) 5586423</p>
             </div>
 
             <div class="single-contact">
@@ -200,7 +201,8 @@
     </section>
 
     <footer>
-        <p>All Right reserved by &copy; <a href="#">Team Basing Aja 2020</a></p>
+        <p>All Right reserved &copy; 2020 Copyright</p>
+        
     </footer>
 
     <script type="text/javascript">

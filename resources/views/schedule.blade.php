@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule for Srikandi Futsal</title>
+    <title>Jadwal Gor Tangerang</title>
     <link rel="stylesheet" href="css/schedule-style.css">
 
     <!-- Vue JS -->
