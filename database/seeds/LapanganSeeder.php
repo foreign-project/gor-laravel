@@ -25,12 +25,12 @@ class LapanganSeeder extends Seeder
             } 
 
             DB::table('lapangan')->insert([
-               'kode_lapangan' => 'LA-'.$j ,
-               'nama' => 'Lapangan Atas',
-               'lokasi' => 'Atas',
-               'kode_jadwal' => 'A'.$j,
-               'lat' => '-5.376350',
-               'lng' => '105.255730',
+               'kode_lapangan' => 'LF-'.$j ,
+               'nama' => 'Lapangan Futsal',
+               'lokasi' => 'Tangerang',
+               'kode_jadwal' => 'F'.$j,
+               'lat' => '-6.17814',
+               'lng' => '106.63309',
            ]);
         }
 
@@ -47,11 +47,11 @@ class LapanganSeeder extends Seeder
 
             DB::table('lapangan')->insert([
                'kode_lapangan' => 'LB-'.$j ,
-               'nama' => 'Lapangan Bawah',
-               'lokasi' => 'Bawah',
+               'nama' => 'Lapangan Basket',
+               'lokasi' => 'Tangerang',
                'kode_jadwal' => 'B'.$j,
-               'lat' => '-5.376141',
-               'lng' => '105.255585',
+               'lat' => '-6.17837',
+               'lng' => '106.63298',
            ]);
         }
 
@@ -67,12 +67,12 @@ class LapanganSeeder extends Seeder
             } 
 
             DB::table('lapangan')->insert([
-               'kode_lapangan' => 'LT-'.$j ,
-               'nama' => 'Lapangan Tengah',
-               'lokasi' => 'Tengah',
-               'kode_jadwal' => 'T'.$j,
-               'lat' => '-5.376303',
-               'lng' => '105.255432',
+               'kode_lapangan' => 'LV-'.$j ,
+               'nama' => 'Lapangan Voly',
+               'lokasi' => 'Tangerang',
+               'kode_jadwal' => 'V'.$j,
+               'lat' => '-6.17843',
+               'lng' => '106.63320',
            ]);
         }
 

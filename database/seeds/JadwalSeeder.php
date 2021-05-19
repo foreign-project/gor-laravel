@@ -26,19 +26,19 @@ class JadwalSeeder extends Seeder
 
             if($i >= 7 && $i <=14){
               DB::table('jadwal')->insert([
-                 'kode_jadwal' => 'A'.$j ,
+                 'kode_jadwal' => 'F'.$j ,
                  'jam' => $jam,
                  'harga' => '70000'
              ]);
            }else if($i >= 15 && $i <=17){
              DB::table('jadwal')->insert([
-                'kode_jadwal' => 'A'.$j ,
+                'kode_jadwal' => 'F'.$j ,
                 'jam' => $jam,
                 'harga' => '80000'
             ]);
           }else{
             DB::table('jadwal')->insert([
-               'kode_jadwal' => 'A'.$j ,
+               'kode_jadwal' => 'F'.$j ,
                'jam' => $jam,
                'harga' => '110000'
            ]);
@@ -91,19 +91,19 @@ class JadwalSeeder extends Seeder
 
             if($i >= 7 && $i <=14){
               DB::table('jadwal')->insert([
-                 'kode_jadwal' => 'T'.$j ,
+                 'kode_jadwal' => 'V'.$j ,
                  'jam' => $jam,
                  'harga' => '70000'
              ]);
            }else if($i >= 15 && $i <=17){
              DB::table('jadwal')->insert([
-                'kode_jadwal' => 'T'.$j ,
+                'kode_jadwal' => 'V'.$j ,
                 'jam' => $jam,
                 'harga' => '80000'
             ]);
           }else{
             DB::table('jadwal')->insert([
-               'kode_jadwal' => 'T'.$j ,
+               'kode_jadwal' => 'V'.$j ,
                'jam' => $jam,
                'harga' => '110000'
            ]);

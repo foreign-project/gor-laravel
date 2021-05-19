@@ -45,7 +45,7 @@
         <footer class="footer">
             <div class="container-fluid">
                 <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Tim Basing Aja</a>, Teknik Informatika - ITERA
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Tim ANR</a>, Sistem Informasi - SBD2
                 </p>
             </div>
         </footer>

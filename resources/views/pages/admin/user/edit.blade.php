@@ -30,7 +30,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Nama User</label>
-                                                <input type="text" name="name" class="form-control" value="{{ $item->nama }}" required>
+                                                <input type="text" name="nama" class="form-control" value="{{ $item->nama }}" required>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -49,7 +49,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Nomor Handphone</label>
-                                                <input type="text" class="form-control" name="phone_number" value="{{ $item->telepone }}" >
+                                                <input type="text" class="form-control" name="telepon" value="{{ $item->telepon }}" >
                                             </div>
                                         </div>
                                         <div class="col-md-12">
