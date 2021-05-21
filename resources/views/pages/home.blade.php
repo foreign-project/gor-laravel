@@ -47,12 +47,13 @@
     <header>
         <h2><a href=" #">Gor Tangerang</a></h2>
         <nav>
-            <li><a href="/">Home</a></li>
-            <li><a href="#services">Layanan</a></li>
-            <li><a href="#maps">Lokasi</a></li>
-            <li><a href="#newsletter">Jadwal</a></li>
-            <li><a href="#contact">Kontak</a></li>
-            <li><a href="{{ route('booking') }}">Booking</a></li>
+            
+            <li style="margin-top: 5px""><a href="/">Home</a></li>
+            <li style="margin-top: 5px""><a href="#services">Layanan</a></li>
+            <li style="margin-top: 5px""><a href="#maps">Lokasi</a></li>
+            <li style="margin-top: 5px""><a href="#newsletter">Jadwal</a></li>
+            <li style="margin-top: 5px""><a href="#contact">Kontak</a></li>
+            <li> <a class="btn btn-success" href="{{ route('booking') }}">Booking</a></li>
         </nav>
     </header>
 
@@ -125,19 +126,11 @@
                 <p>Memberikan layanan dan harga terbaik untuk anda yang akan mengadakan acara serta turnamen olahraga
                 </p>
             </div>
-            <div class="single-service">
-                <div class="icon-area">
-                    <i class="fas fa-dumbbell"></i>
-                </div>
-                <h2>Perlengkapan Olahraga</h2>
-                <p>Menyediakan perlengakapan olahraga dengan kualitas terbaik demi kenyamanan anda</p>
-            </div>
         </div>
     </section>
 
     <section class="maps" id="maps">
-        <h3 class="header-text">Gor TangerangVenue</h3>
-        <p>Lokasi Gor Tangerang tersebar pada beberapa lokasi </p>
+        <h3 class="header-text" style="margin-bottom: 30px;">Lokasi Gor Tangerang</h3>
         <div class="container-map">
             <?php
 			$dump = json_encode($dump, true);
