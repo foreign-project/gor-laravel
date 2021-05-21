@@ -55,7 +55,6 @@ class UpdateLapangan extends Migration
             $table->integer('kode_user')->unsigned();
             $table->string('kode_lapangan',5);
             $table->string('kode_jadwal',5);
-            $table->integer('diskon')->length(20)->unsigned();
             $table->date('tanggal',30);
         });
         

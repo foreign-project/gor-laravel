@@ -27,8 +27,7 @@ class TambahSewaControll extends Controller
 
         Transaksi::insertGetId(
           ['kode_transaksi' => null, 'kode_user' => Auth::user()->kode_user,
-          'kode_lapangan'=> $request->kode_lapangan[$i],'kode_jadwal'=> $request->kode_jadwal[$i], 'diskon'=>$request->diskon[$i],
-          'tanggal'=>$request->tanggal_jadwal[$i]]
+          'kode_lapangan'=> $request->kode_lapangan[$i],'kode_jadwal'=> $request->kode_jadwal[$i], 'tanggal'=>$request->tanggal_jadwal[$i]]
         );
       }
 
