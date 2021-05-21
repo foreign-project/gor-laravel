@@ -60,7 +60,7 @@ Route::prefix('admin')
 
         Route::get('/daftarpenyewa', 'TransaksiController@index');
         Route::delete('/daftarpenyewa/{transaksi}','TransaksiController@destroy');
-        Route::get('/daftarpenyewa/{transaksi}/edit','TransaksiController@edit');
+        // Route::get('/daftarpenyewa/{transaksi}/edit','TransaksiController@edit');
         Route::put('/daftarpenyewa/{transaksi}','TransaksiController@update');
 
         Route::get('/rekap', 'RekapControll@index');

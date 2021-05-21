@@ -40,7 +40,6 @@
                                 <td class="capitalize">{{$trs->user->nama}}</td>
                                 <td>{{$trs->user->telepon}}</td>
                                 <td>{{$trs->kode_transaksi}}</td>
-                                {{-- <td class="capitalize">{{$trs->operator->nama}}</td> --}}
                                 <td>{{$trs->kode_lapangan}}</td>
                                 <td>{{$trs->kode_jadwal}}</td>
                                 <td>{{$trs->diskon}}</td>
@@ -52,7 +51,9 @@
                                         <button type="submit" class="btn btn-danger">Hapus</button>
                                         <!-- <a href="daftarpenyewa/{{$trs->kode_transaksi}}/edit" class="btn btn-primary">Edit</a> -->
                                     </form>
-                                    <button data-urutan="{{$loop->iteration}}" data-id="{{$trs->kode_transaksi}}"  data-lapangan="{{$trs->kode_lapangan}}" data-user="{{$trs->kode_user}}" data-user_kontak="{{$trs->user->telepon}}" data-jadwal="{{$trs->kode_jadwal}}" data-diskon="{{$trs->diskon}}" data-tanggal="{{$trs->tanggal}}" class="btn btn-primary edit-modal">Ubah</button>
+                                    <button data-urutan="{{$loop->iteration}}" data-id="{{$trs->kode_transaksi}}"  data-lapangan="{{$trs->kode_lapangan}}" data-user="{{$trs->kode_user}}" data-user_nama="{{$trs->user->nama}}" data-user_kontak="{{$trs->user->telepon}}" data-jadwal="{{$trs->kode_jadwal}}" data-diskon="{{$trs->diskon}}" data-tanggal="{{$trs->tanggal}}" class="btn btn-primary edit-modal">Ubah</button>
+
+                                    
                                 </td>
                             </tr>
                         @endforeach
@@ -75,7 +76,6 @@
                     <form class="form-horizontal" role="form">
                         <input type="hidden" class="form-control" id="urutan_edit">
                         <input type="hidden" class="form-control" id="idtransaksi_edit">
-                        <input type="hidden" class="form-control" id="namaoperator_edit">
                         <input type="hidden" class="form-control" id="iduser_edit">
                         <input type="hidden" class="form-control" id="lapangan_edit">
                         <div class="form-group">
@@ -136,7 +136,6 @@
                 $('#urutan_edit').val($(this).data('urutan'));
                 $('#idtransaksi_edit').val($(this).data('id'));
                 $('#iduser_edit').val($(this).data('user'));
-                $('#namaoperator_edit').val($(this).data('operator_nama'));
                 $('#nama_edit').val($(this).data('user_nama'));
                 $('#kontak_edit').val($(this).data('user_kontak'));
                 $('#lapangan_edit').val($(this).data('lapangan'));
@@ -146,7 +145,6 @@
                 urutan = $('#urutan_edit').val();
                 id = $('#idtransaksi_edit').val();
                 userid = $("#iduser_edit").val();
-                operatornama = $("#namaoperator_edit").val();
                 usernama = $('#nama_edit').val();
                 userkontak = $('#kontak_edit').val();
                 lapangan = $('#lapangan_edit').val();
@@ -164,7 +162,6 @@
                         'urutan': urutan,
                         'kode_transaksi': id,
                         'kode_user': userid,
-                        // 'nama_operator': operatornama,
                         'nama': usernama = $('#nama_edit').val(),
                         'kontak': userkontak = $('#kontak_edit').val(),
                         'lapangan': lapangan,
@@ -174,11 +171,12 @@
                     },
                     success: function(data) {
                             // alert(id + ", " + urutan + ", " + userid + ", " + operatornama + ", " + usernama + ", " + userkontak + ", " + lapangan + ", " + jadwal + ", " + diskon + ", " + tanggal);
-                            $('.item' + id).replaceWith("<tr class='item" + id + "'><th scope='row'>" + urutan + "</th><td class='capitalize'>" + usernama + "</td><td>" + userkontak + "</td><td>" + id + "</td><td class='capitalize'>" + operatornama + "</td><td>" + lapangan + "</td><td>" + jadwal + "</td><td>" + diskon + "</td><td>" + tanggal + "</td><td class='horizontal'><form action='daftarpenyewa/" + id + "' method='post'><button type='submit' class='btn btn-danger'>Hapus</button></form><button data-urutan='" + urutan + "' data-id='" + id + "' data-lapangan='" + lapangan + "' data-user='" + userid + "' data-user_nama='" + usernama + "' data-user_kontak='" + userkontak + "' data-jadwal='" + jadwal + "' data-diskon='" + diskon + "' data-tanggal='" + tanggal + "' class='btn btn-primary edit-modal'>Ubah</button></td></tr>");
+                            $('.item' + id).replaceWith("<tr class='item" + id + "'><th scope='row'>" + urutan + "</th><td class='capitalize'>" + usernama + "</td><td>" + userkontak + "</td><td>" + id + "</td><td class='capitalize'>" + lapangan + "</td><td>" + jadwal + "</td><td>" + diskon + "</td><td>" + tanggal + "</td><td class='horizontal'><form action='daftarpenyewa/" + id + "' method='post'><button type='submit' class='btn btn-danger'>Hapus</button></form><button data-urutan='" + urutan + "' data-id='" + id + "' data-lapangan='" + lapangan + "' data-user='" + userid + "' data-user_nama='" + usernama + "' data-user_kontak='" + userkontak + "' data-jadwal='" + jadwal + "' data-diskon='" + diskon + "' data-tanggal='" + tanggal + "' class='btn btn-primary edit-modal'>Ubah</button></td></tr>");
                     }
                 });
             });
         }
     </script>
+    
 
 @endsection
