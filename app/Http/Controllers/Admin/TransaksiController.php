@@ -42,10 +42,9 @@ class TransaksiController extends Controller
         // dd($request);
         for($i = 0 ; $i < count($request->kode_lapangan) ; $i++){
 
-          Transaksi::insertGetId(
+          Transaksi::create(
             ['kode_transaksi' => null, 'kode_user' => Auth::user()->kode_user,
-            'kode_lapangan'=> $request->kode_lapangan[$i],'kode_jadwal'=> $request->kode_jadwal[$i], 'diskon'=>$request->diskon[$i],
-            'tanggal'=>$request->tanggal_jadwal[$i]]
+            'kode_lapangan'=> $request->kode_lapangan[$i],'kode_jadwal'=> $request->kode_jadwal[$i], 'tanggal'=>$request->tanggal_jadwal[$i]]
           );
         }
 
@@ -81,7 +80,7 @@ class TransaksiController extends Controller
      */
     public function edit(Transaksi $transaksi)
     {
-        return view('edit',compact('transaksi'));
+        //
     }
 
     /**
@@ -95,7 +94,6 @@ class TransaksiController extends Controller
     {
 
         $updates = Transaksi::find($id);
-        $updates->diskon = $request->diskon;
         $updates->kode_jadwal = $request->jadwal;
         $updates->tanggal = $request->tanggal;
         $updates->save();

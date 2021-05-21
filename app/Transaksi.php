@@ -10,7 +10,7 @@ use App\Lapangan;
 class Transaksi extends Model
 {
     protected $table = "transaksi";
-    protected $fillable = ['kode_transaksi','kode_user','kode_lapangan','kode_jadwal','diskon','tanggal'];
+    protected $fillable = ['kode_transaksi','kode_user','kode_lapangan','kode_jadwal','tanggal'];
     protected $primaryKey = 'kode_transaksi';
     public $timestamps = false;
 

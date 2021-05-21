@@ -4,69 +4,37 @@ function hapusCSS() {
 
     for (i = 0; i < ch.length; i++) {
         if (ch[i].nodeName == "STYLE") {
-            if (ch[i].textContent == "#LA-07{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            if (ch[i].textContent == "#LF-07{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-08{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-08{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-09{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-09{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-10{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-10{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-11{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-11{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-12{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-12{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-13{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-13{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-14{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-14{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-15{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-15{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-16{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-16{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-17{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-17{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-18{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-18{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-19{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-19{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-20{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-20{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-21{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-21{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LA-22{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-07{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-08{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-09{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-10{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-11{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-12{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-13{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-14{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-15{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-16{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-17{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-18{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-19{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-20{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-21{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
-                h.removeChild(ch[i]);
-            } else if (ch[i].textContent == "#LT-22{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+            } else if (ch[i].textContent == "#LF-22{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
             } else if (ch[i].textContent == "#LB-07{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
@@ -100,6 +68,38 @@ function hapusCSS() {
                 h.removeChild(ch[i]);
             } else if (ch[i].textContent == "#LB-22{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
                 h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-07{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-08{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-09{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-10{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-11{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-12{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-13{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-14{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-15{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-16{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-17{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-18{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-19{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-20{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-21{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
+            } else if (ch[i].textContent == "#LV-22{background:#00331e; color: white; pointer-events: none; cursor: not-allowed;}") {
+                h.removeChild(ch[i]);
             }
 
             console.log(ch[i].textContent);
@@ -123,7 +123,7 @@ function gantiWarna(kode) {
     document.getElementsByTagName('head')[0].appendChild(style);
 }
 
-//get json dari tabel transaksi db srikandi via ajax
+//get json dari tabel transaksi via ajax
 function getJSON() {
     hapusCSS();
 
@@ -158,22 +158,22 @@ function buatId() {
     // set id pertombol
     for (var i = 0; i < jadwal.length; i++) {
         if (i < 16) {
-            if (j < 10) jadwal[i].id = "LA-0" + j;
-            else jadwal[i].id = "LA-" + j;
+            if (j < 10) jadwal[i].id = "LF-0" + j;
+            else jadwal[i].id = "LF-" + j;
             j++;
             if (j == 23) {
                 j = 7;
             }
         } else if (i < 32) {
-            if (j < 10) jadwal[i].id = "LT-0" + j;
-            else jadwal[i].id = "LT-" + j;
+            if (j < 10) jadwal[i].id = "LB-0" + j;
+            else jadwal[i].id = "LB-" + j;
             j++;
             if (j == 23) {
                 j = 7;
             }
         } else {
-            if (j < 10) jadwal[i].id = "LB-0" + j;
-            else jadwal[i].id = "LB-" + j;
+            if (j < 10) jadwal[i].id = "LV-0" + j;
+            else jadwal[i].id = "LV-" + j;
             j++;
             if (j == 23) {
                 j = 7;

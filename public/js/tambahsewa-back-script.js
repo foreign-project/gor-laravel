@@ -17,7 +17,6 @@
       var arrNama = document.getElementsByName('nama[]');
       var arrKontak = document.getElementsByName('kontak[]');
       var arrHarga = document.getElementsByName('harga[]');
-      var arrDiskon = document.getElementsByName('diskon[]');
       var arrLokasi= document.getElementsByName('lokasi[]');
       var arrJam= document.getElementsByName('jam[]');
       var nama =["belum"];
@@ -39,17 +38,17 @@
           if(nama.length == 1 &&  i == 0){
             nama[0] = arrNama[i].value;
             kontak[0] = arrKontak[i].value;
-            subtotal[0] = parseInt(arrHarga[i].value)-parseInt(arrDiskon[i].value);
+            subtotal[0] = parseInt(arrHarga[i].value);
             lokasi[0] = arrLokasi[i].value+" ("+arrJam[i].value+")";
           }else{
             if(cekSama(nama, kontak, arrNama[i].value, arrKontak[i].value ) != 999){
               var j = cekSama(nama, kontak, arrNama[i].value, arrKontak[i].value);
-              subtotal[j] = subtotal[j] + (parseInt(arrHarga[i].value) - parseInt(arrDiskon[i].value));
+              subtotal[j] = subtotal[j] + parseInt(arrHarga[i].value);
               lokasi[j] = lokasi[j] +", "+arrLokasi[i].value+" ("+arrJam[i].value+")";
             }else{
               nama.push(arrNama[i].value);
               kontak.push(arrKontak[i].value);
-              subtotal.push(parseInt(arrHarga[i].value)-parseInt(arrDiskon[i].value));
+              subtotal.push(parseInt(arrHarga[i].value));
               lokasi.push(arrLokasi[i].value+" ("+arrJam[i].value+")");
             }
           }
@@ -113,12 +112,6 @@
                               "<input type=\"text\" class=\"form-control\" name=\"harga[]\" value=\"" + harga + "\" onkeyup=\"getSubTotal()\" required>"+
                           "</div>"+
                       "</div>"+
-                      "<div class=\"col-md-2\">"+
-                          "<div class=\"form-group\">"+
-                              "<label for=\"exampleInputEmail1\">Diskon</label>"+
-                              "<input type=\"number\" class=\"form-control\" name=\"diskon[]\" onkeyup=\"getSubTotal()\" value=\"0\" required>"+
-                          "</div>"+
-                      "</div>"
                   "</div>"+
                   "<button type=\"button\" class=\"btn btn-danger btn-fill pull-right\" onclick =\"hapusKartu(\'" + n_id + "\');getSubTotal();\">Batal</button>"+
 

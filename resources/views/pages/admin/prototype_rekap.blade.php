@@ -49,7 +49,6 @@
             <th>Jam</th>
             <th>Penyewa</th>
             <th>Kontak</th>
-            <th>Diskon</th>
             <th>Harga</th>
           </tr>
 
@@ -61,7 +60,6 @@
               <td> {{$t->jadwal->jam}} </td>
               <td> {{$t->user->nama}} </td>
               <td> {{$t->user->telepon}} </td>
-              <td> {{$t->diskon}} </td>
               <td> {{$t->jadwal->harga}} </td>
             </tr>
           @endforeach
@@ -106,7 +104,7 @@
 
                       if(tanggalX == tanggalY){
 
-                        bayar += (trans[i].jadwal.harga - trans[i].diskon);
+                        bayar += (trans[i].jadwal.harga);
 
                       }else{
 
@@ -116,7 +114,7 @@
 
 
                         bayar = 0;
-                        bayar += (trans[i].jadwal.harga - trans[i].diskon);
+                        bayar += (trans[i].jadwal.harga);
                       }
 
                   }

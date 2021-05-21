@@ -12,8 +12,8 @@ new Vue({
     data: {
         jadwal: {
             '1': {
-                'lapangan': 'Atas',
-                'label': 'A',
+                'lapangan': 'Futsal',
+                'label': 'F',
                 'urutan': [ {'nomor':'07:00'},{'nomor':'08:00'},
                             {'nomor':'09:00'}, {'nomor':'10:00'},
                             {'nomor':'11:00'}, {'nomor':'12:00'},
@@ -24,7 +24,7 @@ new Vue({
                             {'nomor':'21:00'}, {'nomor':'22:00'} ]
             },
             '2': {
-                'lapangan': 'Tengah',
+                'lapangan': 'Basket',
                 'label': 'B',
                 'urutan': [ {'nomor':'07:00'},{'nomor':'08:00'},
                             {'nomor':'09:00'}, {'nomor':'10:00'},
@@ -36,8 +36,8 @@ new Vue({
                             {'nomor':'21:00'}, {'nomor':'22:00'} ]
             },
             '3': {
-                'lapangan': 'Bawah',
-                'label': 'C',
+                'lapangan': 'Voly',
+                'label': 'V',
                 'urutan': [ {'nomor':'07:00'},{'nomor':'08:00'},
                             {'nomor':'09:00'}, {'nomor':'10:00'},
                             {'nomor':'11:00'}, {'nomor':'12:00'},

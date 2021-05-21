@@ -136,8 +136,8 @@
     </section>
 
     <section class="maps" id="maps">
-        <h3 class="header-text">Srikandi Venue</h3>
-        <p>Lokasi Futsal Srikandi tersebar pada beberapa lokasi </p>
+        <h3 class="header-text">Gor TangerangVenue</h3>
+        <p>Lokasi Gor Tangerang tersebar pada beberapa lokasi </p>
         <div class="container-map">
             <?php
 			$dump = json_encode($dump, true);

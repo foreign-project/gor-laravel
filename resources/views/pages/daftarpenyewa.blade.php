@@ -29,7 +29,6 @@
                         <th>Kode Transaksi</th>
                         <th>Kode Lapangan</th>
                         <th>Kode Jadwal</th>
-                        <th>Diskon</th>
                         <th>Tanggal</th>
                         
                     </thead>
@@ -43,7 +42,6 @@
                                 {{-- <td class="capitalize">{{$trs->operator->nama}}</td> --}}
                                 <td>{{$trs->kode_lapangan}}</td>
                                 <td>{{$trs->kode_jadwal}}</td>
-                                <td>{{$trs->diskon}}</td>
                                 <td>{{$trs->tanggal}}</td>
                                 {{-- <td class="horizontal">
                                     <form action="/admin/daftarpenyewa/{{$trs->kode_transaksi}}" method="post">
@@ -97,12 +95,6 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="diskon">Diskon:</label>
-                            <div class="col-sm-10">
-                            <input type="text" class="form-control" id="diskon_edit" autofocus>
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label class="control-label col-sm-2" for="tanggal">Tanggal:</label>
                             <div class="col-sm-10">
                             <input type="text" class="form-control" id="tanggal_edit" autofocus>
@@ -141,7 +133,6 @@
                 $('#kontak_edit').val($(this).data('user_kontak'));
                 $('#lapangan_edit').val($(this).data('lapangan'));
                 $('#jadwal_edit').val($(this).data('jadwal'));
-                $('#diskon_edit').val($(this).data('diskon'));
                 $('#tanggal_edit').val($(this).data('tanggal'));
                 urutan = $('#urutan_edit').val();
                 id = $('#idtransaksi_edit').val();
@@ -151,7 +142,6 @@
                 userkontak = $('#kontak_edit').val();
                 lapangan = $('#lapangan_edit').val();
                 jadwal = $('#jadwal_edit').val();
-                diskon = $('#diskon_edit').val();
                 tanggal = $('#tanggal_edit').val();
                 $('#editModal').modal('show');
             });
@@ -169,12 +159,11 @@
                         'kontak': userkontak = $('#kontak_edit').val(),
                         'lapangan': lapangan,
                         'jadwal': jadwal = $('#jadwal_edit').val(),
-                        'diskon': diskon = $('#diskon_edit').val(),
                         'tanggal': tanggal = $('#tanggal_edit').val()
                     },
                     success: function(data) {
                             // alert(id + ", " + urutan + ", " + userid + ", " + operatornama + ", " + usernama + ", " + userkontak + ", " + lapangan + ", " + jadwal + ", " + diskon + ", " + tanggal);
-                            $('.item' + id).replaceWith("<tr class='item" + id + "'><th scope='row'>" + urutan + "</th><td class='capitalize'>" + usernama + "</td><td>" + userkontak + "</td><td>" + id + "</td><td class='capitalize'>" + operatornama + "</td><td>" + lapangan + "</td><td>" + jadwal + "</td><td>" + diskon + "</td><td>" + tanggal + "</td><td class='horizontal'><form action='daftarpenyewa/" + id + "' method='post'><button type='submit' class='btn btn-danger'>Hapus</button></form><button data-urutan='" + urutan + "' data-id='" + id + "' data-lapangan='" + lapangan + "' data-user='" + userid + "' data-user_nama='" + usernama + "' data-user_kontak='" + userkontak + "' data-jadwal='" + jadwal + "' data-diskon='" + diskon + "' data-tanggal='" + tanggal + "' class='btn btn-primary edit-modal'>Ubah</button></td></tr>");
+                            $('.item' + id).replaceWith("<tr class='item" + id + "'><th scope='row'>" + urutan + "</th><td class='capitalize'>" + usernama + "</td><td>" + userkontak + "</td><td>" + id + "</td><td class='capitalize'>" + operatornama + "</td><td>" + lapangan + "</td><td>" + jadwal + "</td><td>" +  tanggal + "</td><td class='horizontal'><form action='daftarpenyewa/" + id + "' method='post'><button type='submit' class='btn btn-danger'>Hapus</button></form><button data-urutan='" + urutan + "' data-id='" + id + "' data-lapangan='" + lapangan + "' data-user='" + userid + "' data-user_nama='" + usernama + "' data-user_kontak='" + userkontak + "' data-jadwal='" + jadwal + "' data-tanggal='" + tanggal + "' class='btn btn-primary edit-modal'>Ubah</button></td></tr>");
                     }
                 });
             });
