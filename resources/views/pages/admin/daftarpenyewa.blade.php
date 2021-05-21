@@ -153,7 +153,10 @@
                 jadwal = $('#jadwal_edit').val();
                 diskon = $('#diskon_edit').val();
                 tanggal = $('#tanggal_edit').val();
-                $('#editModal').modal('show');
+                $('#editModal').modal({
+                    show: true,
+                    backdrop: false
+                })
             });
             $('.modal-footer').on('click', '.edit', function() {
                 $.ajax({
