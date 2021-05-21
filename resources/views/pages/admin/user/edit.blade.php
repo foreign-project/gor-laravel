@@ -6,8 +6,7 @@
     <div class="section-content section-dashboard-home" data-aos="fade-up">
         <div class="container-fluid">
             <div class="dashboard-heading">
-                <h2 class="dashboard-title">User</h2>
-                <p class="dashboard-subtitle">Edit User</p>
+                <h2>Edit User</h2>
             </div>
             <div class="dashboard-content">
                 <div class="row">
@@ -26,9 +25,9 @@
                                 <form action="{{ route('user.update', $item->kode_user) }}" method="POST" enctype="multipart/form-data">
                                     @method("PUT")
                                     @csrf
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
+                                    <div class="row" style="padding: 30px;">
+                                        <div class="col-md-12" style="padding: 5px;">
+                                            <div class="form-group" >
                                                 <label>Nama User</label>
                                                 <input type="text" name="nama" class="form-control" value="{{ $item->nama }}" required>
                                             </div>
@@ -43,7 +42,7 @@
                                             <div class="form-group">
                                                 <label>Password User</label>
                                                 <input type="password" name="password" class="form-control" >
-                                                <small>Kosongkan jika tidak ingin mengganti password.</small>
+                                                <small style="color: red;">Kosongkan jika tidak ingin mengganti password.</small>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -63,7 +62,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" style="padding-right: 40px; padding-bottom: 15px;">
                                         <div class="col text-right">
                                             <button type="submit" class="btn btn-success px-5">
                                                 Save Now

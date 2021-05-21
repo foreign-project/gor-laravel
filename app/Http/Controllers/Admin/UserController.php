@@ -24,25 +24,14 @@ class UserController extends Controller
             return DataTables::of($query)
                 ->addColumn('action', function($item) {
                     return '
-                        <div class="btn-group">
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle mr-1 mb-1"
-                                    type="button"
-                                    data-toggle="dropdown">
-                                    Aksi
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="' . route('user.edit', $item->kode_user) .  '">
-                                    Sunting
-                                    </a>
-                                    <form action="' . route('user.destroy', $item->kode_user) .'" method="POST">
-                                        ' . method_field('delete') . csrf_field() . '
-                                        <button type="submit" class="dropdown-item text-danger">
-                                            Hapus
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
+                        <div class="horizontal">
+                            <a class="btn btn-primary" href="' . route('user.edit', $item->kode_user) .  '">
+                                Sunting
+                            </a>
+                            <form action="' . route('user.destroy', $item->kode_user) .'" method="POST">
+                                ' . method_field('delete') . csrf_field() . '
+                                <button type="submit" class="btn btn-danger">Hapus</button>          
+                            </form>
                         </div>
                     ';
                 })

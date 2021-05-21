@@ -4,12 +4,12 @@
 
 @section('content')
     <div class="col-md-12">
-        <div class="card">
+        <div class="card" style="padding: 15px">
             <div class="header">
                 <h4 class="title">Daftar Users</h4>
                   
                 <div class="row">
-                    <a href="{{ route('user.create') }}" class="btn btn-info mb-3">
+                    <a href="{{ route('user.create') }}" class="btn btn-info mb-3" style="margin-bottom: 15px;">
                         + Tambah User Baru
                     </a>
                 </div>   
