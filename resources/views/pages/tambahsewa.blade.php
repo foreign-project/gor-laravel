@@ -50,12 +50,15 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
+    var myCurrentDate=new Date();
+    var myPastDate=new Date(myCurrentDate);
+    myPastDate.setDate(myPastDate.getDate() - 1);
     $('#date-picker').datepicker({
 
         // uiLibrary: 'bootstrap', 
         format: 'yyyy-mm-dd',
         
-        minDate : new Date()
+        minDate : myPastDate,
         
     });
 });
