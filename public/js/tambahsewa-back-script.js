@@ -109,7 +109,7 @@
                       "<div class=\"col-md-2\">"+
                           "<div class=\"form-group\">"+
                               "<label for=\"exampleInputEmail1\">Harga</label>"+
-                              "<input type=\"text\" class=\"form-control\" name=\"harga[]\" value=\"" + harga + "\" onkeyup=\"getSubTotal()\" required>"+
+                              "<input type=\"text\" class=\"form-control\" readonly name=\"harga[]\" value=\"" + harga + "\" onkeyup=\"getSubTotal()\" required>"+
                           "</div>"+
                       "</div>"+
                   "</div>"+
