@@ -45,7 +45,7 @@
         <footer class="footer">
             <div class="container-fluid">
                 <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Tim ANR</a>, Sistem Informasi - SBD2
+                    &copy; 2021 <a href="#">Tim ANR</a>, Sistem Informasi - SBD2
                 </p>
             </div>
         </footer>

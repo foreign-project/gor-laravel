@@ -49,9 +49,7 @@
                                         <button type="submit" class="btn btn-danger">Hapus</button>
                                         <!-- <a href="daftarpenyewa/{{$trs->kode_transaksi}}/edit" class="btn btn-primary">Edit</a> -->
                                     </form>
-                                    <button data-urutan="{{$loop->iteration}}" data-id="{{$trs->kode_transaksi}}"  data-lapangan="{{$trs->kode_lapangan}}" data-user="{{$trs->kode_user}}" data-user_nama="{{$trs->user->nama}}" data-user_kontak="{{$trs->user->telepon}}" data-jadwal="{{$trs->kode_jadwal}}" data-tanggal="{{$trs->tanggal}}" class="btn btn-primary edit-modal">Ubah</button>
 
-                                    
                                 </td>
                             </tr>
                         @endforeach

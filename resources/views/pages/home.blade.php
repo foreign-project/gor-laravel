@@ -61,53 +61,15 @@
     <section class="banner-area">
         <div class="img-area"></div>
         <div class="banner-text">
-            <h1>Gor Kota Tangerang</h1>
-            <!-- <h3>Make it Easy...</h3> -->
-            <!-- <a href="/home" class="btn">Get Started</a> -->
+            <h1 style="margin-bottom: 75px">Gor Kota Tangerang</h1>
+            <h2 class="container" style="font-weight: 200; margin-bottom: 50px;">
+                Gedung olahraga Tangerang adalah gedung olahraga yang terletak di Jalan A Dimyati, Sukasari, Tangerang. Gedung ini biasanya digunakan untuk event olahraga seperti DBL Tangerang, Smanitra Cup Dll.
+            </h2>
+            <a href="{{ route('booking') }}" class="btn" style="color: white;">Booking Now</a>
         </div>
-        <div class="stat" id="stat">
-            <div class="content-box">
-                <br><br>
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-users"></i>
-                                <h2><span class="counter text-counter">800</span><span>+</span>
-                                </h2>
-                                <p>Pengguna</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-futbol"></i>
-                                <h2><span class="counter text-counter">3</span>
-                                </h2>
-                                <p>Lapangan</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-tshirt"></i>
-                                <h2><span class="counter text-counter">40</span>
-                                </h2>
-                                <p>Items</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-clock"></i>
-                                <h2><span class="counter text-counter">48</span><span>+</span>
-                                </h2>
-                                <p>Jadwal</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
     </section>
 
-    <section class="services-area" id="services">
+    <section class="services-area" id="services" style="margin-bottom: -100px;">
         <h3 class="header-text">Layanan Kami</h3>
         <p>Kami Menyediakan Layanan & Venue Olahraga Terbaik Untuk Anda </p>
         <div class="content-area">
@@ -184,7 +146,6 @@
                 <i class="fa fa-phone"></i>
                 <p>(021) 5586423</p>
             </div>
-
             <div class="single-contact">
                 <input type="text" placeholder="Enter Your Name....">
                 <input type="email" placeholder="Enter Your Email....">
@@ -194,7 +155,7 @@
     </section>
 
     <footer>
-        <p>All Right reserved &copy; 2020 Copyright</p>
+        <p>&copy; 2021 <a href="#" style="color: #28AC75;">Tim ANR</a>, Sistem Informasi - SBD2</p>
         
     </footer>
 
