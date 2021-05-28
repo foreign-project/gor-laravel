@@ -45,7 +45,7 @@
 <body>
 
     <header>
-        <h2><a href=" #">Gor Tangerang</a></h2>
+        <h2><a href="#">Gor Tangerang</a></h2>
         <nav>
             
             <li style="margin-top: 5px""><a href="/">Home</a></li>
@@ -60,9 +60,11 @@
 
     <section class="banner-area">
         <div class="img-area"></div>
+        <div class="wrapper">
+            <h1 style="margin-bottom: 125px" class="typing-demo">Gor Kota Tangerang</h1>
+        </div>
         <div class="banner-text">
-            <h1 style="margin-bottom: 75px">Gor Kota Tangerang</h1>
-            <h2 class="container" style="font-weight: 200; margin-bottom: 50px;">
+            <h2 class="container" style="font-weight: 300; margin-bottom: 25px; font-size: 24px; padding: 0px 100px 0px 100px;">
                 Gedung olahraga Tangerang adalah gedung olahraga yang terletak di Jalan A Dimyati, Sukasari, Tangerang. Gedung ini biasanya digunakan untuk event olahraga seperti DBL Tangerang, Smanitra Cup Dll.
             </h2>
             <a href="{{ route('booking') }}" class="btn" style="color: white;">Booking Now</a>
@@ -218,8 +220,8 @@
                 time: 1000
             });
         });
-
     </script>
+    
 </body>
 
 </html>

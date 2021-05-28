@@ -172,7 +172,7 @@ header nav li {
     -webkit-background-size: cover;
     background-size: cover;
     z-index: -1;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/profilebg.jpg);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/mybg.jpg);
     background-position: center center;
 }
 
@@ -186,11 +186,41 @@ header nav li {
     font-size: 25px;
 }
 
+.wrapper {  
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
 .banner-text {
     opacity: 0;
     margin-top: 100px;
     animation: 1s anime-two 1s forwards;
 }
+
 
 .banner-area a.btn {
     padding: 20px 45px;
