@@ -52,9 +52,14 @@
 $(document).ready(function () {
     $('#date-picker').datepicker({
 
-        uiLibrary: 'bootstrap', format: 'yyyy-mm-dd'
-
+        // uiLibrary: 'bootstrap', 
+        format: 'yyyy-mm-dd',
+        
+        minDate : new Date()
+        
     });
 });
+
 </script>
+
 @endsection
